@@ -17,11 +17,11 @@ return {
     mappings = vim.tbl_filter(function(m)
       return m[1] and #m[1] > 0
     end, mappings)
-    return vim.list_extend(mappings, keys)
+    return mappings
   end,
   opts = {
     mappings = {
-      add = "gz", -- Add surrounding in Normal and Visual modes
+      add = "S", -- Add surrounding in Normal and Visual modes
       delete = "ds", -- Delete surrounding
       find = "", -- Find surrounding (to the right)
       find_left = "", -- Find surrounding (to the left)
