@@ -16,3 +16,4 @@ end
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 map("n", "<Tab>", ":tabnext<cr>")
+map("x", "<leader>p", '"_dP')
