@@ -26,6 +26,9 @@ return {
         char = {
           jump_labels = false,
         },
+        search = {
+          enabled = false,
+        },
       },
     },
   },

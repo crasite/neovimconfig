@@ -22,6 +22,16 @@ return {
           },
         },
       },
+      tailwindcss = {
+        settings = {
+          tailwindCSS = {
+            classAttributes = { "class", "className", "ngClass" },
+            experimental = {
+              classRegex = { "cn\\(([^)]*)\\)", "cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]" },
+            },
+          },
+        },
+      },
     },
   },
 }
