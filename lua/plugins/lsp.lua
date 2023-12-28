@@ -59,10 +59,4 @@ return {
       },
     },
   },
-  setup = {
-    tsserver = function(_, opts)
-      require("typescript").setup({ server = opts })
-      return true
-    end,
-  },
 }
