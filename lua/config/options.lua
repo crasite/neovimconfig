@@ -6,10 +6,13 @@ local opt = vim.opt
 
 opt.swapfile = false
 
-opt.foldexpr = "nvim_treesitter#foldexpr()"
-opt.foldmethod = "expr"
+-- opt.foldexpr = "nvim_treesitter#foldexpr()"
+-- opt.foldmethod = "expr"
 opt.foldlevel = 99
 opt.swapfile = false
+opt.foldcolumn = "1" -- '0' is not bad
+opt.foldlevelstart = 99
+opt.foldenable = true
 opt.tabstop = 2
 opt.softtabstop = 2
 opt.shiftwidth = 2
