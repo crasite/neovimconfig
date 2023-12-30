@@ -6,11 +6,10 @@ local opt = vim.opt
 
 opt.swapfile = false
 
--- opt.foldexpr = "nvim_treesitter#foldexpr()"
--- opt.foldmethod = "expr"
 opt.foldlevel = 99
 opt.swapfile = false
 opt.foldcolumn = "1" -- '0' is not bad
+opt.conceallevel = 1 -- PREVIOUSLY 3 -- Hide * markup for bold and italic
 opt.foldlevelstart = 99
 opt.foldenable = true
 opt.tabstop = 2
