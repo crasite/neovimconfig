@@ -16,12 +16,37 @@ return {
 
     -- see below for full list of optional dependencies 👇
   },
+  keys = {
+    { "<leader>fs", "<cmd>ObsidianQuickSwitch<cr>", desc = "Obsidian Quickswitch", ft = "markdown" },
+  },
   opts = {
     workspaces = {
       {
         name = "personal",
         path = "~/Development/vault-obsidian/Obsidian",
       },
+    },
+    daily_notes = {
+      folder = "Dailies",
+      date_format = "%Y-%m-%d",
+      alias_format = "%B %-d, %Y",
+      template = "Daily Note.md",
+    },
+    completion = {
+      -- Where to put new notes created from completion. Valid options are
+      --  * "current_dir" - put new notes in same directory as the current buffer.
+      --  * "notes_subdir" - put new notes in the default notes subdirectory.
+      new_notes_location = "notes_subdir",
+      prepend_note_id = false,
+      prepend_note_path = true,
+      use_path_only = false,
+    },
+    templates = {
+      subdir = "templates",
+      date_format = "%Y-%m-%d",
+      time_format = "%H:%M",
+      -- A map for custom variables, the key should be the variable and the value a function
+      substitutions = {},
     },
     ui = {
       enable = true, -- set to false to disable all additional syntax features
