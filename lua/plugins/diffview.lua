@@ -15,6 +15,6 @@ return {
     },
     { "<leader>gdt", "<cmd>DiffviewFileHistory %<cr>", desc = "Diff this file" },
     { "<leader>gdc", "<cmd>DiffviewClose<cr>", desc = "Close Diff" },
-    { "<leader>got", "<cmd>OpenOldRevision<cr>", desc = "View this file from other revision" },
+    { "<leader>go", "<cmd>OpenOldRevision<cr>", desc = "View this file from other revision" },
   },
 }
